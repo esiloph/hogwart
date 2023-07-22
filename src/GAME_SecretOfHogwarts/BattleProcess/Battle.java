@@ -66,7 +66,7 @@ public class Battle {
         GA.화면클리어();
         player.경험치 += monster.경험치;
         GA.게임진행대사("         "+monster.이름 + "를(을) 쓰러뜨렸다!!\n\n" +
-                "                   "+monster.경험치 + "만큼의 경험치를 얻었다!!!");
+                "                        "+monster.경험치 + "만큼의 경험치를 얻었다!!!");
 
         boolean 휴식추가 = (Math.random() * 5 + 1 < 2.25);
         int 얻은골드 = (int) (Math.random() * monster.경험치);
@@ -76,7 +76,7 @@ public class Battle {
         }
         if (얻은골드 > 0) {
             player.골드 += 얻은골드;
-            GA.정보알림("               "+monster.이름 + "에게서 " + 얻은골드 + " 골드를 얻었다!!!");
+            GA.정보알림("          "+monster.이름 + "에게서 " + 얻은골드 + " 골드를 얻었다!!!");
         }
         GA.아무키나();
     }

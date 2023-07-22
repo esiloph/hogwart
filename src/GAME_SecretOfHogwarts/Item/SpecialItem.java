@@ -28,7 +28,7 @@ public class SpecialItem extends UniqueItem {
                 "               방어력 "+방어력증가*100+"% 만큼 증가했다.\n" +
                 "               마법공격력 "+마법공격력증가*100+"% 만큼 증가했다.");
         GA.아무키나();
-        GA.게임진행대사("강력한 힘이 느껴진다 !!!");
+        GA.게임진행대사("         강력한 힘이 느껴진다 !!!");
         GA.아무키나();
     }
     public void 마법주문추가(Player player){
