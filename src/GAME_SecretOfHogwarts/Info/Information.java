@@ -104,12 +104,18 @@ public class Information {
         GA.화면클리어();
         GA.게임진행대사(               "기본 아이템의 능력을 업그레이드할 수 있습니다.\n" +
                       "                        아이템을 선택해 주십시오!!\n" +
-                      "                   (1) "+player.기본무기[player.무기번호] + "      (2) "+player.기본방어구[player.방어구번호]);
+                      "(1) "+player.기본무기[player.무기번호] +"\n"+
+                      "               (2) "+player.기본방어구[player.방어구번호]);
         int 아이템입력=GA.번호입력(":",2);
         GA.화면클리어();
         if(아이템입력==1){
             GA.게임진행대사("                "+player.기본무기[player.무기번호]+" 선택");
-            player.무기번호++;
+            if(player.무기번호==4){
+
+            }else{
+                player.무기번호++;
+            }
+
         }else{
             GA.게임진행대사("                "+player.기본방어구[player.방어구번호]+" 선택");
             player.방어구번호++;
